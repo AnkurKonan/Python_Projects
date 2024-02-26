@@ -11,4 +11,4 @@ root["bg"] = "Red"
 root.mainloop()
 
 # by the way this coin image i have made in krita (free alternative of adobe photoshop)
-s
+
