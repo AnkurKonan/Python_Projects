@@ -33,3 +33,9 @@ l2 = Label(root, text="                                                         
            fg="white", bg="green")
 l2.pack()
 root.mainloop()
+
+
+# To run this program -->
+# python3 Age-calculator.py
+# To terminate the program -->
+# press --> control + c
