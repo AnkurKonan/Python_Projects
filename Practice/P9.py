@@ -18,3 +18,17 @@ print(Students)
 print(Students[-1])
 print(Students[2:1])
 print(Students[:3])
+
+#Set
+Set1 = {"Ankur", 56, "Rajiv"}
+Set2 = {"Ankur", 78, "Ganga"}
+intersection = Set1 & Set2
+mod = Set1 | Set2
+# mod = Set1 < Set2
+# mod = Set1 > Set2
+difference = Set1 - Set2
+print(list(Set1))
+
+print(mod)
+print(difference)
+print(intersection)
