@@ -1,12 +1,16 @@
 Students = ["Ankur", "Yash", "Arsh", "Garv", 2,5,90]
+Students2 = [12,53,7,63,89,35,56]
+Students3 = ["Ankur", "Yash", "Arsh", "Garv"]
 Students[6] = 67
 Students.append("Rahul")
 Students.extend(["Agam", 89])
 Students.remove("Arsh")
 Students.insert(3, "Rohit")
 Students[1:1] = ["Anand", "Roshan"]
-#Sort only works when there are items of same datatype
-# Students.sort()
+StudentsCopy = Students2[:]
+Students2.sort()
+Students3.sort(key=str.lower)
+print(sorted(Students3, key=str.lower))
 
 print("Ankur" in Students)
 print(Students[0])
