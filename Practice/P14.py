@@ -11,3 +11,8 @@ parser = argparse.ArgumentParser(
 parser.add_argument('-c','--color', metavar='color', required=True, help='the color to search for')
 args = parser.parse_args()
 print(args.color)
+
+#Lambda functions:
+lambda num : num * 2
+multiply = lambda a, b : a * b
+print(multiply(2,4))
