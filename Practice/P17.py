@@ -11,3 +11,8 @@ except ZeroDivisionError:
 finally:
     result = 1
 print(result)
+
+try:
+    raise Exception("An error")
+except Exception as error:
+    print(error)
