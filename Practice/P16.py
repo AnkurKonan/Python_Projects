@@ -23,3 +23,18 @@ def logtime(func):
 def hello():
     print("hello")
 hello()
+
+#Docstring
+def incrment(n):
+    """Increment a numeber"""
+    return n + 1
+class Dog:
+    """The class representign dogs"""
+    def __init__(self, name, age):
+        """Initialise a new dog"""
+        self.name = name
+        self.age = age
+    def bark(self):
+        """Let the dog bark"""
+        print('WOF!')
+print(help(Dog))
