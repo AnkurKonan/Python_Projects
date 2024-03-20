@@ -51,6 +51,21 @@ btn9 = tk.Button(root, text='9', command=lambda: add(1), width=5, font=('Apple',
 btn9.grid(rows = 2, column = 2)
 btn0 = tk.Button(root, text='0', command=lambda: add(1), width=5, font=('Apple', 14))
 btn0.grid(rows = 2, column = 3)
+
+btnplus = tk.Button(root, text='+', command=lambda: add(1), width=5, font=('Apple', 14))
+btnplus.grid(rows = 2, column = 4)
+btnminus = tk.Button(root, text='-', command=lambda: add(1), width=5, font=('Apple', 14))
+btnminus.grid(rows = 3, column = 4)
+btnmult = tk.Button(root, text='*', command=lambda: add(1), width=5, font=('Apple', 14))
+btnmult.grid(rows = 4, column = 4)
+btnslash = tk.Button(root, text='/', command=lambda: add(1), width=5, font=('Apple', 14))
+btnslash.grid(rows = 5, column = 4)
+btnbracket = tk.Button(root, text='(', command=lambda: add(1), width=5, font=('Apple', 14))
+btnbracket.grid(rows = 5, column = 1)
+btnsidebracket = tk.Button(root, text=')', command=lambda: add(1), width=5, font=('Apple', 14))
+btnsidebracket.grid(rows = 5, column = 3)
+btnequal = tk.Button(root, text='=', command=lambda: add(1), width=5, font=('Apple', 14))
+btnequal.grid(rows = 6, column = 1, columnspan=2)
 root.mainloop()
 
 
