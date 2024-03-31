@@ -41,5 +41,8 @@ print(Avenger1["powers"])
 print(Avenger1["age"])
 print(Avenger1["family"])
 print(Avenger1["weakness"])
+print(Avenger1.values())
+print(Avenger1.keys())
+print(Avenger1.items())
 # print(Avenger1["family"]["antmay"])
 
