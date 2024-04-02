@@ -5,3 +5,8 @@ e = {}
 f = set()
 print(type(f))
 print(type(e))
+f.add(4)
+f.add(4)
+f.add(5)
+f.add(5)
+f.add((4, 5, 6))
