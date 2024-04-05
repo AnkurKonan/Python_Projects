@@ -39,4 +39,12 @@ elif d > a and d > b and d > c:
 elif d < a and d < b and d < c:
   print('the smallest number is'+ str(d))
   
+print("I", end=" ")
+print("am", end=" ")
+print("a", end=" ")
+print("software engineer", end=" ")
+
+n = 10
+for i in range(10):
+    print("*" * (n-i))
 
