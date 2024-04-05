@@ -4,5 +4,21 @@
 
 Python projects (some are from python only &amp; some are from different libraries to make some GUIs).
 Some projects are for just practice & some are full fledged Programs with different functionalies.
-Feel free to contribute & optimise. I will be really glad.
+Feel free to contribute & optimise in these projects, I will be really glad.
 
+To run any python file in Windows
+```
+python3 file_name.py
+```
+To run any python file in MacOS
+
+```
+python3 file_name.py
+```
+To check if python is installed in your machine
+```
+python --version
+```
+```
+python3 --version
+```
