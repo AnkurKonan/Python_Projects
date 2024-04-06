@@ -8,7 +8,7 @@ Feel free to contribute & optimise in these projects, I will be really glad.
 
 To run any python file in Windows
 ```
-python3 file_name.py
+python file_name.py
 ```
 To run any python file in MacOS
 
@@ -23,5 +23,5 @@ python --version
 python3 --version
 ```
 
-When you want to terminate or stop the program to run just press ctrl + c  
+When you want to terminate or stop the program to run just press ctrl + c in your terminal 
 
