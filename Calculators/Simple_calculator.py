@@ -8,6 +8,14 @@ app.geometry("320x445")
 app.title("Calculator")
 app.resizable(False, False)
 
+def bracket():
+    current_text = output.cget("text")
+    if not current_text or current_text[-1] in "+-x÷(":
+        new_text = current_text + "("
+    else:
+        new_text = current_text + ")"
+    output.configure(text=new_text)
+
 def button_click(value):
     current_text = output.cget("text")
     if value == "=":
