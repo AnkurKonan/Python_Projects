@@ -8,6 +8,22 @@ app.geometry("320x445")
 app.title("Calculator")
 app.resizable(False, False)
 
+def percentage():
+    current_text = output.cget("text")
+    try:
+        result = str(eval(current_text) / 100)
+        output.configure(text=result)
+    except Exception as e:
+        output.configure(text="Error")
+
+def plus_minus():
+    current_text = output.cget("text")
+    if current_text.startswith('-'):
+        new_text = current_text[1:]
+    else:
+        new_text = '-' + current_text
+    output.configure(text=new_text)
+
 def bracket():
     current_text = output.cget("text")
     if not current_text or current_text[-1] in "+-x÷(":
@@ -35,11 +51,11 @@ def clear_display():
 
 bomb_label = customtkinter.CTkButton(app, text="C", font=("Helvetica", 25), fg_color="#0598ed", height=60, width=60, command=lambda: clear_display())
 bomb_label.grid(row=1, column=0, pady=(0, 8), padx=(2,2))
-bomb_label = customtkinter.CTkButton(app, text="()", font=("Helvetica", 25), fg_color="#0598ed", height=60, width=60)
+bomb_label = customtkinter.CTkButton(app, text="()", font=("Helvetica", 25), fg_color="#0598ed", height=60, width=60, command=lambda: bracket())
 bomb_label.grid(row=1, column=1, pady=(0, 8), padx=(2,2))
-bomb_label = customtkinter.CTkButton(app, text="%", font=("Helvetica", 25), fg_color="#0598ed", height=60, width=60)
+bomb_label = customtkinter.CTkButton(app, text="%", font=("Helvetica", 25), fg_color="#0598ed", height=60, width=60, command=lambda: percentage())
 bomb_label.grid(row=1, column=2, pady=(0, 8), padx=(2,2))
-bomb_label = customtkinter.CTkButton(app, text="÷", font=("Helvetica", 25), fg_color="#02c238", height=60, width=60)
+bomb_label = customtkinter.CTkButton(app, text="÷", font=("Helvetica", 25), fg_color="#02c238", height=60, width=60, command=lambda: button_click('÷'))
 bomb_label.grid(row=1, column=3, pady=(0, 8), padx=(2,2))
 
 bomb_label = customtkinter.CTkButton(app, text="1", font=("Helvetica", 25), fg_color="#0598ed", height=60, width=60, command=lambda: button_click(1))
@@ -69,7 +85,7 @@ bomb_label.grid(row=4, column=2, pady=(0, 8), padx=(2,2))
 bomb_label = customtkinter.CTkButton(app, text="x", font=("Helvetica", 25), fg_color="#02c238", height=60, width=60, command=lambda: button_click('x'))
 bomb_label.grid(row=4, column=3, pady=(0, 8), padx=(2,2))
 
-bomb_label = customtkinter.CTkButton(app, text="+/-", font=("Helvetica", 25), fg_color="#0598ed", height=60, width=60)
+bomb_label = customtkinter.CTkButton(app, text="+/-", font=("Helvetica", 25), fg_color="#0598ed", height=60, width=60, command=lambda: plus_minus())
 bomb_label.grid(row=5, column=0 , pady=(0, 8), padx=(2,2))
 bomb_label = customtkinter.CTkButton(app, text="0", font=("Helvetica", 25), fg_color="#0598ed", height=60, width=60, command=lambda: button_click(0))
 bomb_label.grid(row=5, column=1, pady=(0, 8), padx=(2,2))
