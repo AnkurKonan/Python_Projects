@@ -4,13 +4,11 @@ from PIL import Image, ImageOps
 customtkinter.set_appearance_mode("dark")
 customtkinter.set_default_color_theme("blue")
 
-class App(customtkinter.CTk):
-    def __init__(self):
-        super().__init__()
+class ThirdInterface(customtkinter.CTkFrame):
+    def __init__(self, parent):
+        super().__init__(parent)
+        self.parent = parent
 
-        self.title("Brain Stocks")
-        self.geometry("1100x600")
-        self.resizable(False, False)
         self.grid_rowconfigure(11, weight=1)
 
         original_image = Image.open("right_arrow.png")
@@ -20,7 +18,7 @@ class App(customtkinter.CTk):
         self.sidebar_frame = customtkinter.CTkFrame(self, width=150, corner_radius=0)
         self.sidebar_frame.grid(row=0, column=0, rowspan=12, sticky="nsew", padx=(0,10), pady=(0,0))
         self.button_image = customtkinter.CTkImage(Image.open("right_arrow.png"), size=(20, 20))
-        self.welcome = customtkinter.CTkButton(self.sidebar_frame, text="", fg_color="#0598ed", height=40, width=40, image=self.button_image_mirrored, compound="right")
+        self.welcome = customtkinter.CTkButton(self.sidebar_frame, text="", fg_color="#0598ed", height=40, width=40, image=self.button_image_mirrored, compound="right", command=self.go_back)
         self.welcome.grid(row=0, column=0, padx=(15, 10), pady=(20,10))
         self.welcome = customtkinter.CTkButton(self.sidebar_frame, text="",fg_color="#0598ed", height=40, width= 40, image=self.button_image, compound="right")
         self.welcome.grid(row=0, column=1, padx=(5, 15), pady=(20,10))
@@ -1946,6 +1944,5 @@ class App(customtkinter.CTk):
     def apperance(self, new_appearance_mode: str):
         customtkinter.set_appearance_mode(new_appearance_mode)
 
-if __name__ == "__main__":
-    app = App()
-    app.mainloop()
+    def go_back(self):
+        self.parent.show_frame("Main")
