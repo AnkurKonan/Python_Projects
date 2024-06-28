@@ -54,7 +54,7 @@ def play_again():
     b7.configure(text="", fg_color="#171717", state="normal")
     b8.configure(text="", fg_color="#171717", state="normal")
     b9.configure(text="", fg_color="#171717", state="normal")
-    frame2.configure(text="")
+    frame2.configure(text="", fg_color="#171717")
 
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#171717", height=95, width=95,
                              command=lambda: change_color('b1'))
