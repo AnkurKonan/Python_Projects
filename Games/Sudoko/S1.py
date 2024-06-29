@@ -27,7 +27,6 @@ b1.grid(row=7, column=0, pady=(1, 1), padx=(2, 1))
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#ffffff", height=45, width=45)
 b1.grid(row=8, column=0, pady=(1, 1), padx=(2, 1))
 
-
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#ffffff", height=45, width=45)
 b1.grid(row=0, column=1, pady=(1, 1), padx=(1, 1))
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#ffffff", height=45, width=45)
@@ -46,7 +45,6 @@ b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#ff
 b1.grid(row=7, column=1, pady=(1, 1), padx=(1, 1))
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#ffffff", height=45, width=45)
 b1.grid(row=8, column=1, pady=(1, 1), padx=(1, 1))
-
 
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#ffffff", height=45, width=45)
 b1.grid(row=0, column=2, pady=(1, 1), padx=(1, 1))
@@ -67,7 +65,6 @@ b1.grid(row=7, column=2, pady=(1, 1), padx=(1, 1))
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#ffffff", height=45, width=45)
 b1.grid(row=8, column=2, pady=(1, 1), padx=(1, 1))
 
-
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#78c6fa", height=45, width=45)
 b1.grid(row=0, column=3, pady=(1, 1), padx=(1, 1))
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#78c6fa", height=45, width=45)
@@ -86,7 +83,6 @@ b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#78
 b1.grid(row=7, column=3, pady=(1, 1), padx=(1, 1))
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#78c6fa", height=45, width=45)
 b1.grid(row=8, column=3, pady=(1, 1), padx=(1, 1))
-
 
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#78c6fa", height=45, width=45)
 b1.grid(row=0, column=4, pady=(1, 1), padx=(1, 1))
@@ -107,7 +103,6 @@ b1.grid(row=7, column=4, pady=(1, 1), padx=(1, 1))
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#78c6fa", height=45, width=45)
 b1.grid(row=8, column=4, pady=(1, 1), padx=(1, 1))
 
-
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#78c6fa", height=45, width=45)
 b1.grid(row=0, column=5, pady=(1, 1), padx=(1, 1))
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#78c6fa", height=45, width=45)
@@ -126,7 +121,6 @@ b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#78
 b1.grid(row=7, column=5, pady=(1, 1), padx=(1, 1))
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#78c6fa", height=45, width=45)
 b1.grid(row=8, column=5, pady=(1, 1), padx=(1, 1))
-
 
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#ffffff", height=45, width=45)
 b1.grid(row=0, column=6, pady=(1, 1), padx=(1, 1))
@@ -147,7 +141,6 @@ b1.grid(row=7, column=6, pady=(1, 1), padx=(1, 1))
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#ffffff", height=45, width=45)
 b1.grid(row=8, column=6, pady=(1, 1), padx=(1, 1))
 
-
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#ffffff", height=45, width=45)
 b1.grid(row=0, column=7, pady=(1, 1), padx=(1, 1))
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#ffffff", height=45, width=45)
@@ -167,7 +160,6 @@ b1.grid(row=7, column=7, pady=(1, 1), padx=(1, 1))
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#ffffff", height=45, width=45)
 b1.grid(row=8, column=7, pady=(1, 1), padx=(1, 1))
 
-
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#ffffff", height=45, width=45)
 b1.grid(row=0, column=8, pady=(1, 1), padx=(1, 1))
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#ffffff", height=45, width=45)
@@ -186,7 +178,5 @@ b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#ff
 b1.grid(row=7, column=8, pady=(1, 1), padx=(1, 1))
 b1 = customtkinter.CTkButton(app, text="", font=("Helvetica", 60), fg_color="#ffffff", height=45, width=45)
 b1.grid(row=8, column=8, pady=(1, 1), padx=(1, 1))
-
-
 
 app.mainloop()
