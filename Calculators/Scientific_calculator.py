@@ -32,76 +32,38 @@ def bracket_left():
 
 def bracket_right():
     current_text = output.cget("text")
-    new_text = current_text + ")"
-    output.configure(text=new_text)
+    if current_text.startswith("sin"):
+        new_text = current_text + "°)"
+        output.configure(text=new_text)
+    else:
+        new_text = current_text + ")"
+        output.configure(text=new_text)
 
 def button_click(value):
-        current_text = output.cget("text")
-        if value == "=":
-            try:
-                if "sin" in current_text or "cos" in current_text or "tan" in current_text:
-                    current_text = current_text.replace("sin", "math.sin").replace("cos", "math.cos").replace("tan",
-                                                                                                              "math.tan")
-                    current_text = current_text.replace("°", "*math.pi/180")
-                    current_text = current_text.replace("π", "math.pi")
-                if "ln" in current_text:
-                    current_text = current_text.replace("ln", "math.log")
-                if "log" in current_text:
-                    current_text = current_text.replace("log", "math.log10")
-                result = str(eval(current_text.replace('^', '**').replace('x', '*').replace('÷', '/')))
-                output.configure(text=result)
-            except Exception as e:
-                output.configure(text="Error")
-        elif value == "AC":
-            output.configure(text="")
-        elif value == "rnd":
-            random_number = str(random.random())
-            new_text = current_text + random_number
-            output.configure(text=new_text)
-        else:
-            new_text = current_text + str(value)
-            output.configure(text=new_text)
-
-
-# def button_click(value):
-#     current_text = output.cget("text")
-#     if value == "=":
-#         try:
-#             if "sin" in current_text or "cos" in current_text or "tan" in current_text:
-#                 current_text = current_text.replace("sin", "math.sin").replace("cos", "math.cos").replace("tan", "math.tan")
-#                 current_text = current_text.replace("°", "*math.pi/180")
-#                 current_text = current_text.replace("π", "math.pi")
-#             if "ln" in current_text:
-#                 current_text = current_text.replace("ln", "math.log")
-#             if "log" in current_text:
-#                 current_text = current_text.replace("log", "math.log10")
-#             result = str(eval(current_text.replace('^', '**').replace('x', '*').replace('÷', '/')))
-#             output.configure(text=result)
-#         except Exception as e:
-#             output.configure(text="Error")
-#     elif value == "AC":
-#         output.configure(text="")
-#     elif value == "x\u00b3":
-#         result = str(eval(f"{current_text}**3"))
-#         output.configure(text=result)
-#     elif value == "x\u00b2":
-#         result = str(eval(f"{current_text}**2"))
-#         output.configure(text=result)
-#     elif value == "rnd":
-#         random_number = str(random.random())
-#         new_text = current_text + random_number
-#         output.configure(text=new_text)
-#     elif value == "xʸ":
-#         new_text = current_text + "**"
-#         output.configure(text=new_text)
-#     else:
-#         if "^" in current_text and value not in ("^", "=", "AC", "x\u00b3", "x\u00b2", "xʸ"):
-#             base, exp = current_text.split("^")
-#             new_text = f"{base}^{value}"
-#             output.configure(text=new_text)
-#         else:
-#             new_text = current_text + str(value)
-#             output.configure(text=new_text)
+    current_text = output.cget("text")
+    if value == "=":
+        try:
+            if "sin" in current_text or "cos" in current_text or "tan" in current_text:
+                current_text = current_text.replace("sin", "math.sin").replace("cos", "math.cos").replace("tan",
+                                                                                                          "math.tan")
+                current_text = current_text.replace("°", "*math.pi/180")
+            if "ln" in current_text:
+                current_text = current_text.replace("ln", "math.log")
+            if "log" in current_text:
+                current_text = current_text.replace("log", "math.log10")
+            result = str(eval(current_text.replace('^', '**').replace('x', '*').replace('÷', '/')))
+            output.configure(text=result)
+        except Exception as e:
+            output.configure(text="Error")
+    elif value == "AC":
+        output.configure(text="")
+    elif value == "rnd":
+        random_number = str(random.random())
+        new_text = current_text + random_number
+        output.configure(text=new_text)
+    else:
+        new_text = current_text + str(value)
+        output.configure(text=new_text)
 
 def clear_display():
     output.configure(text="")
@@ -140,11 +102,11 @@ bomb_label = customtkinter.CTkButton(app, text="\u00b2√", font=("Helvetica", 1
 bomb_label.grid(row=4, column=2, pady=(2,2), padx=(2,2))
 bomb_label = customtkinter.CTkButton(app, text="n!", font=("Helvetica", 17), fg_color="#0263eb", height=35, width=55)
 bomb_label.grid(row=4, column=3, pady=(2,2), padx=(2,2))
-bomb_label = customtkinter.CTkButton(app, text="sin", font=("Helvetica", 17), fg_color="#0263eb", height=35, width=55)
+bomb_label = customtkinter.CTkButton(app, text="sin\u207B\u00B9", font=("Helvetica", 17), fg_color="#0263eb", height=35, width=55, command=lambda: button_click('sin\u207B\u00B9'))
 bomb_label.grid(row=4, column=4, pady=(2,2), padx=(2,2))
-bomb_label = customtkinter.CTkButton(app, text="cos", font=("Helvetica", 17), fg_color="#0263eb", height=35, width=55)
+bomb_label = customtkinter.CTkButton(app, text="cos\u207B\u00B9", font=("Helvetica", 17), fg_color="#0263eb", height=35, width=55, command=lambda: button_click('cos\u207B\u00B9'))
 bomb_label.grid(row=4, column=5, pady=(2,2), padx=(2,2))
-bomb_label = customtkinter.CTkButton(app, text="tan", font=("Helvetica", 17), fg_color="#0263eb", height=35, width=55)
+bomb_label = customtkinter.CTkButton(app, text="tan\u207B\u00B9", font=("Helvetica", 17), fg_color="#0263eb", height=35, width=55, command=lambda: button_click('tan\u207B\u00B9'))
 bomb_label.grid(row=4, column=6, pady=(2,2), padx=(2,4))
 
 bomb_label = customtkinter.CTkButton(app, text="xʸ", font=("Helvetica", 17), fg_color="#0263eb", height=35, width=55, command=lambda: button_click('xʸ'))
