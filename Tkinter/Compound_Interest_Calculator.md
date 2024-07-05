@@ -1,1 +1,1 @@
-<img width="1440" alt="Screenshot 2024-04-08 at 7 26 39 PM" src="https://github.com/AnkurKonan/Python_Projects/assets/112815485/3498389d-f67d-44d5-a05f-4eab8c1432cc">
+<img width="583" alt="Screenshot 2024-07-05 at 11 47 33 PM" src="https://github.com/AnkurKonan/Python_Projects/assets/112815485/dd35351b-e31d-4266-a04d-ebb028631040">
