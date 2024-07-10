@@ -1,5 +1,5 @@
 Before running these Programs you need to create a virtual environment of python to avoid
-errors & issue while running the program.
+errors & issue while running the program. And also install OpenCV library 
 
 To create virtual environment then activate that in Windows
 ```
