@@ -1,11 +1,9 @@
 import cv2
 import imageio
-import numpy as np
 
 gif = imageio.mimread('kakashi.gif')
 gif_frames = [cv2.cvtColor(frame, cv2.COLOR_RGB2BGR) for frame in gif]
 
-# Initialize variables
 first_frame = None
 area = 500
 key = 0 
@@ -13,7 +11,7 @@ key = 0
 while True:
     for frame in gif_frames:
         text = "Normal"
-        frame = cv2.resize(frame, (500, 500))  # Resize frame
+        frame = cv2.resize(frame, (500, 500)) 
         gray_img = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY) 
         gaussian_img = cv2.GaussianBlur(gray_img, (21, 21), 0)  
 
