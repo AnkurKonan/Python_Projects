@@ -17,6 +17,5 @@ print(a)
 b = np.full((3,2), 2)
 print(b)
 np.matmul(a,b)
-
 c = np.identity(3)
 np.linalg.det(c)
