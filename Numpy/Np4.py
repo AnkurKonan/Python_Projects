@@ -15,4 +15,11 @@ h1 = np.ones((2,4))
 h2 = np.zeros((2,2))
 print(np.hstack((h1,h2)))
 
+# Data
+data = np.genfromtxt('data.txt', delimiter=',')
+data = data.astype('int32')
+print(data)
+print((~((data > 5000) & (data < 4000)) | (data < 9000) | (data < 6000)))
+print(((data < 9000) | (data < 6000)))
+
 
