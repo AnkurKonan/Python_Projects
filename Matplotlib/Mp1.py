@@ -16,4 +16,14 @@ plt.plot(x2[:6], x2[:6]**2, 'r', label='X^2')
 plt.plot(x2[5:], x2[5:]**2, 'r--')
 plt.title('The Graph', fontdict={'fontname': 'Apple Braille Outline 8 Dot', 'fontsize': 15})
 
+#X & Y labels
+plt.xlabel('X Axis')
+plt.ylabel('Y Axis')
 
+# X & Y axis Tickmarks
+plt.xticks([0,1,2,3,4,])
+plt.yticks([0,2,4,6,8,10])
+
+# Saving up file
+plt.savefig('mygraph.png', dpi=300)
+plt.show()
