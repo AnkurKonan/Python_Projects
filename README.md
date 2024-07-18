@@ -2,7 +2,7 @@
 # Python_Projects
 
 <!--<img src="https://img.shields.io/github/release/tterb/PlayMusic.svg?style=flat"/>-->
-<img width="650" alt="Screenshot 2024-02-10 at 10 00 00 PM" src="https://github.com/AnkurKonan/Python_Projects/assets/112815485/df54db23-df5e-48b1-ab18-01835b2d5de6">
+<img width="890" alt="Screenshot 2024-07-18 at 8 38 23 PM" src="https://github.com/user-attachments/assets/bb6b1e0b-7357-4639-844b-7fa5691ef27c">
 
 Python projects (some are from python only &amp; some are from different libraries to make some GUIs).
 Some projects are for just practice & some are full fledged Programs with different functionalies.
