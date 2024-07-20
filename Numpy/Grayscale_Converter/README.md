@@ -7,7 +7,7 @@ To Run this program:
 - Make sure to include the image path or reference in the code (which you want to convert into grayscale)
 To check if python is installed in your machine
 - Make sure to import the Numpy library
-- Check weather the numpy library is supported by you python version
+- Check weather the numpy library is supported by the current python version that you are using
 ```
 python --version
 ```
