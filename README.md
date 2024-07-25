@@ -25,5 +25,6 @@ python --version
 python3 --version
 ```
 
-When you want to terminate or stop the program to run just press ctrl + c in your terminal 
+When you want to terminate or stop the program to run just press ctrl + c in your terminal.
+If the program still not terminates then try ctrl + \ or ctrl + z.
 
